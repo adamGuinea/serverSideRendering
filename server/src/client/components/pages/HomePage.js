@@ -4,10 +4,12 @@ const Home = () => {
     return (
         <div>
             <div>I'm the new home component</div>
-            <button onClick={() => console.log('hiya')}>Press me!</button>
+            <button onClick={() => console.log('hiya')}>Press me</button>
         </div>
     );
 };
 
-export default Home;
+export default {
+    component: Home
+};
 
