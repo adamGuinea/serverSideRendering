@@ -4,7 +4,7 @@ import {fetchUsers} from '../actions';
 
 class UsersList extends Component {
     componentDidMount(){
-        // this.props.fetchUsers();
+        this.props.fetchUsers();
     }
 
     renderUsers(){
@@ -17,7 +17,7 @@ class UsersList extends Component {
         return (
             <div>
                 where my user list will go:
-                <ul>{this.renderUsers}</ul>
+                <ul>{this.renderUsers()}</ul>
             </div>
         )
     }
